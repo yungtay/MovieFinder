@@ -31,7 +31,6 @@ function comprar(id){
         quantidade: qtd
     }
     const requisicao = axios.post(`https://mock-api.bootcamp.respondeai.com.br/api/v2/moviefinder/filmes/${id}/ingresso`, dados);
-    console.log(requisicao)
     requisicao.then(tudoCerto)
     requisicao.catch(erro)
 }
